@@ -1,0 +1,40 @@
+.DetailsPageContainer {
+  padding: 20px 0 20px 0;
+  margin: 0 auto;
+  width: calc(100% - 50px);
+}
+.button {
+  display: block;
+  margin-left: auto;
+  color: rgb(255, 255, 255);
+  background-color: #b90000;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid rgb(114, 0, 0);
+  border-radius: 15px;
+}
+.button:hover,
+.button:focus {
+  background-color: #d42424;
+  color: rgb(0, 0, 0);
+}
+.Cast {
+  color: black;
+  text-decoration: none;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.Cast:hover {
+  text-shadow: 1px 1px 2px rgb(255, 199, 199);
+}
+
+.Reviews {
+  color: black;
+  text-decoration: none;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.Reviews:hover {
+  text-shadow: 1px 1px 2px rgb(255, 199, 199);
+}

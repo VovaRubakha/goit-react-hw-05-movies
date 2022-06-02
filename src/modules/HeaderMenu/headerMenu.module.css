@@ -1,6 +1,6 @@
 .headerList {
   margin: 0;
-  padding: 0;
+  padding: 0 25px 0 25px;
   list-style: none;
   display: flex;
   align-items: center;
@@ -25,4 +25,9 @@
   color: rgb(255, 255, 255);
   border-bottom: 2px solid red;
   background-color: #b90000;
+}
+.headerContainer {
+  padding: 20px 0 20px 0;
+  margin: 0 auto;
+  width: calc(100% - 50px);
 }

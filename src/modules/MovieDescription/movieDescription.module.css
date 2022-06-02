@@ -1,0 +1,13 @@
+.card {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+.description {
+  margin-left: 20px;
+}
+.title {
+  margin: 0 0 20px 0;
+}
+p {
+  margin: 0 0 20px 0;
+}

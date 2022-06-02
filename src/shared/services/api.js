@@ -17,14 +17,23 @@ export const getMovieById = async id => {
   return data;
 };
 
-export const searchFilmByName = async (query, page = 1) => {
+export const getMovieByName = async query => {
   const { data } = await instance.get(`/search/movie`, {
     params: {
       query,
-      page,
-      include_adult: false,
-      language: 'en - US',
     },
   });
+  return data.results;
+};
+
+export const getMovieCast = async id => {
+  const { data } = await instance.get(`/movie/${id}/credits`);
+
+  return data;
+};
+
+export const getMovieReviews = async id => {
+  const { data } = await instance.get(`/movie/${id}/reviews`);
+
   return data;
 };

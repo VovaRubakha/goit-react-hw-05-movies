@@ -9,14 +9,16 @@ const getActiveLink = ({isActive}) => {
 
 const HeaderMenu = () => {
     return (
-        <ul className={style.headerList}>
-            <li className={style.headerItem}>
-                <NavLink to='/' className={getActiveLink}>Home</NavLink>
-            </li>
-            <li className={style.headerItem}>
-                <NavLink to='/movies' className={getActiveLink}>Movies</NavLink>
-            </li>
-        </ul>
+
+            <ul className={style.headerList}>
+                <li className={style.headerItem}>
+                    <NavLink to='/' className={getActiveLink}>Home</NavLink>
+                </li>
+                <li className={style.headerItem}>
+                    <NavLink to='/movies' className={getActiveLink}>Movies</NavLink>
+                </li>
+            </ul>
+
     )
 }
 

@@ -15,12 +15,12 @@ const HomePage = () => {
     useEffect(() => {
         const fetchMovies = async () => {
             setMovies(prevState => ({ ...prevState, loading: true }))
-            const result = await getMovies();
+            const {results} = await getMovies();
             try {
                 setMovies(prevState => ({
                     ...prevState,
                     loading: false,
-                    items: result
+                    items: results
                 }))
             } catch (error) {
                 setMovies(prevState => ({
@@ -35,9 +35,8 @@ const HomePage = () => {
 
     const { items, loading, error } = movies;
     return (
-        <div>
-            <h2 className={styles.HomePage}>Home</h2>
-            <MoviesList items={ items.results}/>
+        <div className={styles.homePage__container}>
+            {Boolean(items.length) && <MoviesList items={items}/>}
             {loading && <p>...Loading</p>}
             {error && <p>{error}</p>}
         </div>
